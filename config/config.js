@@ -78,6 +78,10 @@ export default {
       component: '../layouts/UserLayout',
       routes: [
         {
+          path: '/user',
+          redirect: '/user/login'
+        },
+        {
           name: 'login',
           path: '/user/login',
           component: './user/login',
@@ -85,22 +89,25 @@ export default {
       ],
     },
     {
-      path: '/',
+      path: '/test',
       component: '../layouts/SecurityLayout',
       routes: [
         {
-          // name: 'test',
-          path: '/',
+          path: '/test',
           component: '../layouts/BasicLayout',
           routes: [
             {
-              path: '/dict',
+              path: '/test',
+              redirect: '/test/dict',
+            },
+            {
+              path: '/test/dict',
               name: '字典管理',
               icon: 'read',
               component: './Test/Dict'
             },
             {
-              path: '/param',
+              path: '/test/param',
               name: '参数管理',
               icon: 'deployment-unit',
               component: './Test/Param'
