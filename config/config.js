@@ -85,13 +85,27 @@ export default {
       ],
     },
     {
-      path: '/test',
-      // component: '../layouts/UserLayout',
+      path: '/',
+      component: '../layouts/SecurityLayout',
       routes: [
         {
-          name: 'test',
-          path: '/test',
-          component: './test'
+          // name: 'test',
+          path: '/',
+          component: '../layouts/BasicLayout',
+          routes: [
+            {
+              path: '/dict',
+              name: '字典管理',
+              icon: 'read',
+              component: './Test/Dict'
+            },
+            {
+              path: '/param',
+              name: '参数管理',
+              icon: 'deployment-unit',
+              component: './Test/Param'
+            }
+          ]
         }
       ]
     },

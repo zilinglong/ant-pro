@@ -4,7 +4,7 @@ class Test extends Component {
   constructor() {
     super();
     this.state = {
-      name: '菜鸟教程',
+      name: '参数管理',
       link: 'http://www.runoob.com'
     };
   }
