@@ -85,6 +85,17 @@ export default {
       ],
     },
     {
+      path: '/test',
+      // component: '../layouts/UserLayout',
+      routes: [
+        {
+          name: 'test',
+          path: '/test',
+          component: './test'
+        }
+      ]
+    },
+    {
       path: '/',
       component: '../layouts/SecurityLayout',
       routes: [
