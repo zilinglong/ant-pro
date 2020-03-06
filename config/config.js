@@ -102,13 +102,13 @@ export default {
             },
             {
               path: '/test/dict',
-              name: '字典管理',
+              name: 'dict',
               icon: 'read',
               component: './Test/Dict'
             },
             {
               path: '/test/param',
-              name: '参数管理',
+              name: 'param',
               icon: 'deployment-unit',
               component: './Test/Param'
             }
